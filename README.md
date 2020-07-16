@@ -1,13 +1,6 @@
 # Tidy_Data_Assignment
 
 The scrip requires the dataset to be present in the ./data folder as defined by following file structure.
-./data
-  |- train
-  |- test
-  |- features_info.txt
-  |- features.txt
-  |- activity_labels.txt
-  |- README.txt
   
  * [/](./tree-md)
    * [data](./dir2)
