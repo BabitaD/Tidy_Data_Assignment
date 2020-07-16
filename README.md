@@ -1,6 +1,6 @@
 # Tidy_Data_Assignment
 
-The scrip requires the dataset to be present in the ./data folder as defined by following file structure.
+The script requires the dataset to be present in the ./data folder as defined by following file structure.
   
  * [/](./tree-md)
    * [data](./dir2)
