@@ -1,4 +1,10 @@
 library(dplyr)
+activity <- read.table("./data/activity_labels.txt"
+                       , col.names = c("code", "activity")
+                       , stringsAsFactors = FALSE)
+features <- read.table("./data/features.txt"
+                       , col.names = c("num","features")
+                       , stringsAsFactors = FALSE)
 X_train <- read.table("./data/train/X_train.txt", sep = ""
                       ,header = FALSE
                       ,nrows = 7352
@@ -40,13 +46,6 @@ df <- rbind(train_df,test_df)
 
 #--------------------------------------------------------------------#
 #2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-
-activity <- read.table("./data/activity_labels.txt"
-                       , col.names = c("code", "activity")
-                       , stringsAsFactors = FALSE)
-features <- read.table("./data/features.txt"
-                       , col.names = c("num","features")
-                       , stringsAsFactors = FALSE)
 
 df_mean_sd <- df %>% select(subject,  activity, contains("mean"), contains("std"))
 names(df_mean_sd)
